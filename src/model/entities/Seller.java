@@ -98,4 +98,7 @@ public class Seller implements Serializable {
                 "- department = " + department +
                 ']';
     }
+
+    public void getBaseSalary(double baseSalary) {
+    }
 }
