@@ -51,7 +51,13 @@ public class Program {
 
         System.out.println("Inserido com sucesso! Novo ID: " + newSeller.getId());
 
+        System.out.println("\n=== TESTE 5: seller update =====");
+        seller = sellerDao.findById(1);
+        seller.setName("Paulo Vilela");
+        seller.setEmail("paulovilela@gmail.com");
+        sellerDao.update(seller);
 
+        System.out.println("Atualizado com sucesso!  ");
     }
 
 }
