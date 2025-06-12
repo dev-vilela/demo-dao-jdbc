@@ -99,6 +99,5 @@ public class Seller implements Serializable {
                 ']';
     }
 
-    public void getBaseSalary(double baseSalary) {
-    }
+
 }
