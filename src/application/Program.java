@@ -7,9 +7,12 @@ import model_dao.SellerDao;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Program {
     public static  void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
 
         /*Department obj = new Department(1, "Developer");
 
@@ -58,6 +61,15 @@ public class Program {
         sellerDao.update(seller);
 
         System.out.println("Atualizado com sucesso!  ");
+
+        System.out.println("\n=== TESTE 6: seller delete =====");
+        System.out.print("informe um ID para deletar: ");
+        int id = sc.nextInt();
+        sellerDao.deleteById(id);
+
+        System.out.println("Deletado com sucesso!  ");
+
+        sc.close();
     }
 
 }
